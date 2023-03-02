@@ -110,7 +110,7 @@ public class MSButton{
             clicked = false;
             count--;
           }
-        }else if(mines.contains(this)){
+        }else if(mines.contains(this) && flagged == false){
          displayLosingMessage();
         }else if(countMines(myRow,myCol) > 0){
           setLabel(countMines(myRow,myCol));
